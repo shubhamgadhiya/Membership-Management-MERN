@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register, .login, .dashboard, .member{
+  background-color: whitesmoke;
+}
+.register-border, .login-border, .member-borderradius{
+  border-radius: 20px !important;
+}
+.icon{
+  position: absolute;
+  top: 20%;
+  padding-left: 20px;
+}
+.register-button, .login-button{
+  background-color: navy;
+  color: white;
+  padding: 5px;
+}
+.member-button{
+  background-color: navy;
+  color: white;
+}
+.member-button:hover{
+  background-color: navy;
+  color: white;
+}
+.login-page{
+  width: 40%;
+}
+
+.loaderdiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 1000;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ddd;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.dashboard-link{
+  color: white;
+  text-decoration: none;
+}
+
+.member-border{
+  border: 1px solid black;
+  border-color: black;
+  background-color: white;
+  margin-top: 5px;
+  border-radius: 0;
+}
+
+.member-btn{
+  border: 1px solid black;
+  border-color: black;
+  background-color: white;
+  margin-top: 5px;
+  border-radius: 0;
+}
+.member-btn:hover{
+  border: 1px solid black;
+  border-color: black;
+  background-color: white;
+  cursor: pointer;
+}
+.member-heading{
+  background: navy;
+  color: white;
+  padding: 10px;
+}
+.member .row input{
+  border-radius: 20px;
+}
+
+.member-imagePreview {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+  object-fit: cover; 
+}
+
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
